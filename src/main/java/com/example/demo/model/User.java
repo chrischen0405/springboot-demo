@@ -23,6 +23,18 @@ public class User implements Serializable {
     @Column(nullable = false)
     private String regTime;
 
+    public User() {
+        super();
+    }
+    public User(String name, String pwd, String email, String nick, String regTime) {
+        super();
+        this.userName = name;
+        this.passWord = pwd;
+        this.email = email;
+        this.nickName = nick;
+        this.regTime = regTime;
+    }
+
     public Long getId() {
         return id;
     }
